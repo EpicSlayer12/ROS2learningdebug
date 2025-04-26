@@ -1,0 +1,15 @@
+version: '3'
+services:
+  bar-desktop-full:
+    image: johnny555/bar:v4
+    user: ubuntu
+    volumes:
+      - ../:/workspace:cached
+
+    environment:
+      - DISPLAY=:1
+
+    ports:
+      - 6080:80
+
+    command: /bin/sh -c "while sleep 1000; do :; done"
