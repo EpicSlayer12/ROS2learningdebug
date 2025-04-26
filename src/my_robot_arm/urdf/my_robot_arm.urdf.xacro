@@ -56,7 +56,7 @@
         <child link="finger_link"/>
         <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0"/>
         <axis xyz="1 0 0"/>
-        <limit effort="100.0" lower="0.00" upper="0.037" velocity="1"/>
+        <limit effort="100.0" lower="-0.01" upper="0.037" velocity="10.00"/>
     </joint>
 
     <joint name="gripper_joint" type="fixed">
