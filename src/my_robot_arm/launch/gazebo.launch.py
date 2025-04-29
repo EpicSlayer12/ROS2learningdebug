@@ -56,7 +56,7 @@ def generate_launch_description():
 
     use_rviz = LaunchConfiguration('use_rviz')
 
-    use_rviz_arg = DeclareLaunchArgument("use_rviz", default_value='true')
+    use_rviz_arg = DeclareLaunchArgument("use_rviz", default_value='false')
 
     robot_state_publisher = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
